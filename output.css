@@ -3435,11 +3435,6 @@ html:has(.drawer-toggle:checked) {
   padding-bottom: 2.5rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -3564,6 +3559,10 @@ html:has(.drawer-toggle:checked) {
   padding-right: 0.75rem;
 }
 
+.pt-0 {
+  padding-top: 0px;
+}
+
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -3606,6 +3605,14 @@ html:has(.drawer-toggle:checked) {
 
 .pt-\[62px\] {
   padding-top: 62px;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pb-\[20px\] {
+  padding-bottom: 20px;
 }
 
 .text-left {
@@ -4050,6 +4057,10 @@ footer, footer *{
     display: flex;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-\[250px\] {
     height: 250px;
   }
@@ -4192,12 +4203,20 @@ footer, footer *{
     padding-right: 50%;
   }
 
+  .sm\:pt-12 {
+    padding-top: 3rem;
+  }
+
   .sm\:pt-4 {
     padding-top: 1rem;
   }
 
   .sm\:pt-\[62px\] {
     padding-top: 62px;
+  }
+
+  .sm\:pb-\[80px\] {
+    padding-bottom: 80px;
   }
 
   .sm\:text-left {

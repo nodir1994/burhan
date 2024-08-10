@@ -209,7 +209,7 @@
     </li>
   </ul>
   <section style="background-image: url(img/main-bg.jpg)"
-    class="bg-cover relative bg-center xl:py-[140px] pt-[100px] pb-[120pxy] xl:overflow-visible overflow-hidden">
+    class="bg-cover relative bg-center xl:py-[140px] pt-[100px] pb-[20px] xl:overflow-visible overflow-hidden">
     <div class="container mx-auto relative">
       <h1
         class="font-extrabold lg:text-[60px] sm:text-[42px] text-3xl sm:leading-[1.1] mb-9 lg:pr-0 sm:pr-[200px] text-[#00175A] lg:max-w-[670px]">
@@ -217,10 +217,10 @@
       </h1>
       <div class="flex sm:items-center sm:flex-row flex-col items-stretch  gap-[10px] mb-14">
         <a href="expert.html"
-          class="text-white sm:text-lg text-sm leading-[22px] text-center py-4 px-[50px] rounded-md bg-green hover:text-white hover:bg-green-dark font-bold transition-all border-none">BIZNESGA
+          class="text-white sm:text-lg text-lg leading-[22px] text-center py-4 px-[50px] rounded-md bg-green hover:text-white hover:bg-green-dark font-bold transition-all border-none">BIZNESGA
           YORDAM</a>
         <a href="keys.html"
-          class="text-green sm:text-lg text-sm leading-[18px] text-center py-4 px-[50px] rounded-md bg-white hover:text-green hover:bg-white font-bold transition-all border-2 border-green">`
+          class="text-green sm:text-lg text-lg leading-[18px] text-center py-4 px-[50px] rounded-md bg-white hover:text-green hover:bg-white font-bold transition-all border-2 border-green">
           KEYSLAR</a>
       </div>
       <div class="flex items-center rounded-[10px] bg-white xl:py-[52px] xl:px-12 p-5 text-green mb-[85px] border-l-[10px] border-green 
@@ -481,7 +481,7 @@
       </div>
     </div>
   </section>
-  <section class="pt-[62px] xl:pb-[122px] pb-12">
+  <section class="sm:pt-[62px] xl:pb-[122px] pb-12 pt-6">
     <div class="container mx-auto">
       <h2 class="text-blue font-bold sm:text-[40px] text-3xl sm:mb-8 mb-4">
         Keyslar
@@ -621,7 +621,7 @@
     <!-- Slider main container -->
     <div class="swiper w-full overflow-hidden">
       <!-- Additional required wrapper -->
-      <div class="swiper-wrapper pb-[80px]">
+      <div class="swiper-wrapper sm:pb-[80px] pb-10">
         <!-- Slides -->
         <div class="swiper-slide sm:w-[400px] sm:basis-[400px] sm:max-w-[400px] w-[300px] basis-[300px] max-w-[300px]">
           <div class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card">
@@ -776,7 +776,7 @@
     </div>
   </section>
   <section
-    class="mb-[0px] xl:pt-[150px] xl:pb-[120px] lg:mt-[-300px] sm:mt-0 py-12 relative z-10 bg-cover w-full bg-right-bottom bg-no-repeat"
+    class="mb-[0px] xl:pt-[150px] xl:pb-[120px] lg:mt-[-300px] sm:mt-0 sm:pt-12 pt-3 pb-12 relative z-10 bg-cover w-full bg-right-bottom bg-no-repeat"
     style="background-image: url(img/modern2.png)">
     <div class="container mx-auto">
       <div
@@ -868,7 +868,17 @@
       </div>
     </div>
   </section>
-  <section class="request relative">
+  <section class="request relative sm:hidden">
+    <marquee
+      class="uppercase absolute top-1/2 -translate-y-1/2 font-bold lg:text-[118px] sm:text-[58px] text-[34px] text-[#DDEBEC]"
+      behavior="alternate" direction="right" scrollamount="4">Savollar bormi?</marquee>
+    <div class="container mx-auto sm:pb-[150px] pb-12 relative z-10">
+      <div class="flex justify-center">
+        <a href="#"><img class="sm:max-w-max max-w-14" src="img/next.png" alt="" /></a>
+      </div>
+    </div>
+  </section>
+  <section class="request relative hidden sm:block">
     <marquee
       class="uppercase absolute top-1/2 -translate-y-1/2 font-bold lg:text-[118px] sm:text-[58px] text-[34px] text-[#DDEBEC]"
       behavior="alternate" direction="right" scrollamount="20">Savollar bormi?</marquee>
