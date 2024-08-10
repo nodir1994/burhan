@@ -3088,6 +3088,10 @@ html:has(.drawer-toggle:checked) {
   gap: 30px;
 }
 
+.gap-\[20px\] {
+  gap: 20px;
+}
+
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
@@ -4161,6 +4165,14 @@ footer, footer *{
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .sm\:font-semibold {
+    font-weight: 600;
   }
 
   .sm\:leading-7 {
