@@ -1,1403 +1,1092 @@
 <!DOCTYPE html>
 <html class="bg-white">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </head>
-  <body>
-    <header class="">
-      <div class="container header_top mx-auto">
-        <div class="flex justify-between items-center pt-3 pb-3">
-          <a href="index.html"
-            ><img
-              class="lg:max-w-[270px] max-w-[175px]"
-              src="img/logo.svg" 
-              alt=""
-          /></a>
-          <div class="flex items-center gap-[18px] xl:ml-0 ml-auto mr-12">
-            <a
-              href="#"
-              class="hidden xl:flex font-medium items-center rounded-[6px] gap-[7px] bg-green text-white pt-1 pb-1 pr-3 pl-3"
-            >
-              <img src="img/user.svg" alt="" />Shaxsiy kabinet
-            </a>
-            <a
-              href="tel:+998991094775"
-              class="hidden xl:flex font-medium items-center rounded-[6px] gap-[7px] bg-green text-white pt-1 pb-1 pr-3 pl-3"
-            >
-              <img src="img/phone.svg" alt="" />(99) 109-47-75
-            </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <header class="">
+    <div class="container header_top mx-auto">
+      <div class="flex justify-between items-center pt-3 pb-3">
+        <a href="index.html"><img class="lg:max-w-[270px] max-w-[175px]" src="img/logo.svg" alt="" /></a>
+        <div class="flex items-center gap-[18px] xl:ml-0 ml-auto mr-12 xl:mr-0">
+          <a href="#"
+            class="hidden xl:flex font-medium items-center rounded-[6px] gap-[7px] bg-green text-white pt-1 pb-1 pr-3 pl-3">
+            <img src="img/user.svg" alt="" />Shaxsiy kabinet
+          </a>
+          <a href="tel:+998991094775"
+            class="hidden xl:flex font-medium items-center rounded-[6px] gap-[7px] bg-green text-white pt-1 pb-1 pr-3 pl-3">
+            <img src="img/phone.svg" alt="" />(99) 109-47-75
+          </a>
+          <div class="dropdown dropdown-hover">
+            <div tabindex="0" role="button" class="text-black flex items-center gap-1">
+              O'z <img src="img/arrow-black.svg" alt="" />
+            </div>
+            <ul tabindex="0" class="dropdown-content right-0 menu shadow bg-white rounded-xl z-[1] w-auto">
+              <li><a class="text-black">Ru</a></li>
+              <li><a class="text-black">En</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="drawer-content block xl:hidden">
+          <!-- Page content here -->
+          <label for="my-drawer-4" class="drawer-button cursor-pointer z-20">
+            <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+              viewBox="0 0 512 512">
+              <path fill="#004122" d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+            </svg>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="bg-green header_bottom xl:block hidden">
+      <div class="container mx-auto">
+        <ul class="flex justify-between items-center pt-2 pb-2">
+          <li>
+            <a class="text-white pb-2 pt-2 block" href="index.html">Biz haqimizda</a>
+          </li>
+          <li>
             <div class="dropdown dropdown-hover">
-              <div
-                tabindex="0"
-                role="button"
-                class="text-black flex items-center gap-1"
-              >
-                O'z <img src="img/arrow-black.svg" alt="" />
+              <div tabindex="0" role="button" class="text-white flex items-center gap-1 pt-3 pb-3">
+                Biznes xizmatlar<img src="img/arrow-white.svg" alt="" />
               </div>
-              <ul
-                tabindex="0"
-                class="dropdown-content right-0 menu shadow bg-white rounded-xl z-[1] w-auto"
-              >
-                <li><a class="text-black">Ru</a></li>
-                <li><a class="text-black">En</a></li>
+              <ul tabindex="0" class="dropdown-content menu shadow bg-white rounded-xl z-[1] w-auto">
+                <li>
+                  <a class="text-black whitespace-nowrap">Biznes xizmatlar 1</a>
+                </li>
+                <li>
+                  <a class="text-black whitespace-nowrap">Biznes xizmatlar 2</a>
+                </li>
               </ul>
             </div>
-          </div>
-          <div class="drawer-content block xl:hidden">
-            <!-- Page content here -->
-            <label for="my-drawer-4" class="drawer-button cursor-pointer z-20">
-              <svg
-                class="swap-off fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  fill="#004122"
-                  d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
-                />
+          </li>
+          <li>
+            <a class="text-white pb-2 pt-2 block" href="keys.html">Keyslar</a>
+          </li>
+          <li>
+            <a href="expert.html" class="text-white pb-2 pt-2 block" href="#">Ekspertlarimiz</a>
+          </li>
+          <li>
+            <a class="text-white pb-2 pt-2 block" href="gallery.html">Galereya</a>
+          </li>
+          <li>
+            <a class="text-white pb-2 pt-2 block" href="partners.html">Hamkorlarga</a>
+          </li>
+          <li>
+            <div class="dropdown dropdown-hover">
+              <div tabindex="0" role="button" class="text-white flex items-center gap-1 pt-3 pb-3">
+                Press-Markaz<img src="img/arrow-white.svg" alt="" />
+              </div>
+              <ul tabindex="0" class="dropdown-content menu shadow bg-white rounded-xl z-[1] w-auto">
+                <li>
+                  <a href="press.html" class="text-black whitespace-nowrap">Press-Markaz 1</a>
+                </li>
+                <li>
+                  <a href="press.html" class="text-black whitespace-nowrap">Press-Markaz 2</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="text-white pb-2 pt-2 block" href="contacts.html">Bog’lanish</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="drawer drawer-end z-50">
+      <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-side">
+        <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+        <ul class="menu bg-green text-base-content min-h-full w-80 p-4">
+          <!-- Sidebar content here -->
+          <li class="absolute top-1 right-1 cursor-pointer z-10">
+            <label for="my-drawer-4" aria-label="close sidebar" class="">
+              <svg class="sm:max-w-max max-w-[34px]" width="45" height="44" viewBox="0 0 45 44" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_78_2)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.9351 24.5924L33.3062 34.9636C33.652 35.2976 34.1151 35.4824 34.5958 35.4782C35.0765 35.474 35.5363 35.2812 35.8762 34.9413C36.2161 34.6014 36.409 34.1415 36.4131 33.6608C36.4173 33.1802 36.2325 32.717 35.8986 32.3713L25.5274 22.0001L35.8986 11.6289C36.2325 11.2832 36.4173 10.8201 36.4131 10.3394C36.409 9.85868 36.2161 9.39886 35.8762 9.05894C35.5363 8.71903 35.0765 8.52622 34.5958 8.52204C34.1151 8.51786 33.652 8.70265 33.3062 9.03661L22.9351 19.4078L12.5639 9.03661C12.2166 8.71091 11.7562 8.53311 11.2801 8.54085C10.804 8.54858 10.3496 8.74123 10.013 9.07803C9.67644 9.41484 9.48411 9.86938 9.47672 10.3455C9.46932 10.8216 9.64745 11.2818 9.97339 11.6289L20.3427 22.0001L9.97156 32.3713C9.79646 32.5404 9.65679 32.7427 9.56071 32.9664C9.46462 33.19 9.41405 33.4306 9.41193 33.674C9.40982 33.9175 9.45621 34.1589 9.54839 34.3842C9.64057 34.6095 9.7767 34.8142 9.94884 34.9863C10.121 35.1585 10.3257 35.2946 10.551 35.3868C10.7763 35.479 11.0177 35.5254 11.2611 35.5232C11.5046 35.5211 11.7451 35.4705 11.9688 35.3745C12.1925 35.2784 12.3948 35.1387 12.5639 34.9636L22.9351 24.5924Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_78_2">
+                    <rect width="44" height="44" fill="white" transform="translate(0.935059)" />
+                  </clipPath>
+                </defs>
               </svg>
             </label>
-          </div>
-        </div>
+          </li>
+          <li>
+            <a class="text-white pb-2 pt-2 block" href="index.html">Biz haqimizda</a>
+          </li>
+          <li>
+            <div class="flex flex-col items-start">
+              <div tabindex="0" role="button" class="text-white flex items-center gap-3">
+                Biznes xizmatlar<img src="img/arrow-white.svg" alt="" />
+              </div>
+              <ul tabindex="0" class="menu before:hidden m-0 p-0">
+                <li>
+                  <a class="text-white whitespace-nowrap">Biznes xizmatlar 1</a>
+                </li>
+                <li>
+                  <a class="text-white whitespace-nowrap">Biznes xizmatlar 2</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="text-white pb-2 pt-2 block" href="keys.html">Keyslar</a>
+          </li>
+          <li>
+            <a href="expert.html" class="text-white pb-2 pt-2 block" href="#">Ekspertlarimiz</a>
+          </li>
+          <li>
+            <a class="text-white pb-2 pt-2 block" href="gallery.html">Galereya</a>
+          </li>
+          <li>
+            <a class="text-white pb-2 pt-2 block" href="partners.html">Hamkorlarga</a>
+          </li>
+          <li>
+            <div class="flex flex-col items-start">
+              <div tabindex="0" role="button" class="text-white flex items-center gap-3">
+                Press-Markaz<img src="img/arrow-white.svg" alt="" />
+              </div>
+              <ul tabindex="0" class="menu before:hidden m-0 p-0">
+                <li>
+                  <a class="text-white whitespace-nowrap">Press-Markaz 1</a>
+                </li>
+                <li>
+                  <a class="text-white whitespace-nowrap">Press-Markaz 2</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="text-white pb-2 pt-2 block" href="contacts.html">Bog’lanish</a>
+          </li>
+          <li class="mt-7 w-[calc(100% - 30px)]">
+            <a href="#"
+              class="inline-flex font-medium items-center rounded-[6px] gap-[7px] justify-center bg-white hover:bg-white text-green pt-1 pb-1 pr-3 pl-3">
+              <img src="img/user-wh.svg" alt="" />Shaxsiy kabinet
+            </a>
+          </li>
+          <li class="mt-7 w-[calc(100% - 30px)]">
+            <a href="tel:+998991094775"
+              class="inline-flex font-medium items-center rounded-[6px] gap-[7px] justify-center bg-white hover:bg-white text-green pt-1 pb-1 pr-3 pl-3">
+              <img src="img/phone-green.svg" alt="" />(99) 109-47-75
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="bg-green header_bottom xl:block hidden">
-        <div class="container mx-auto">
-          <ul class="flex justify-between items-center pt-2 pb-2">
-            <li>
-              <a class="text-white pb-2 pt-2 block" href="index.html"
-                >Biz haqimizda</a
-              >
-            </li>
-            <li>
-              <div class="dropdown dropdown-hover">
-                <div
-                  tabindex="0"
-                  role="button"
-                  class="text-white flex items-center gap-1 pt-3 pb-3"
-                >
-                  Biznes xizmatlar<img src="img/arrow-white.svg" alt="" />
-                </div>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu shadow bg-white rounded-xl z-[1] w-auto"
-                >
-                  <li>
-                    <a class="text-black whitespace-nowrap"
-                      >Biznes xizmatlar 1</a
-                    >
-                  </li>
-                  <li>
-                    <a class="text-black whitespace-nowrap"
-                      >Biznes xizmatlar 2</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a class="text-white pb-2 pt-2 block" href="keys.html">Keyslar</a>
-            </li>
-            <li>
-              <a href="expert.html" class="text-white pb-2 pt-2 block" href="#">Ekspertlarimiz</a>
-            </li>
-            <li>
-              <a class="text-white pb-2 pt-2 block" href="gallery.html"
-                >Galereya</a
-              >
-            </li>
-            <li>
-              <a class="text-white pb-2 pt-2 block" href="partners.html"
-                >Hamkorlarga</a
-              >
-            </li>
-            <li>
-              <div class="dropdown dropdown-hover">
-                <div
-                  tabindex="0"
-                  role="button"
-                  class="text-white flex items-center gap-1 pt-3 pb-3"
-                >
-                  Press-Markaz<img src="img/arrow-white.svg" alt="" />
-                </div>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu shadow bg-white rounded-xl z-[1] w-auto"
-                >
-                  <li>
-                    <a href="press.html" class="text-black whitespace-nowrap"
-                      >Press-Markaz 1</a
-                    >
-                  </li>
-                  <li>
-                    <a href="press.html" class="text-black whitespace-nowrap"
-                      >Press-Markaz 2</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a class="text-white pb-2 pt-2 block" href="contacts.html"
-                >Bog’lanish</a
-              >
-            </li>
-          </ul>
-        </div>
+    </div>
+  </header>
+  <ul
+    class="absolute lg:top-1/2 sm:top-[650px] z-40 left-auto right-0 list-none gap-3 pt-5 pb-5 p-0 bg-white w-[56px] flex flex-col justify-center items-center rounded-l-[20px] top-2/3">
+    <li>
+      <a href="#"><img class="object-contain w-7 h-auto transition-all hover:scale-[1.1]" src="img/facebook.png"
+          alt="" /></a>
+    </li>
+    <li>
+      <a href="#"><img class="object-contain w-7 h-auto transition-all hover:scale-[1.1]" src="img/youtube.png"
+          alt="" /></a>
+    </li>
+    <li>
+      <a href="#"><img class="object-contain w-7 h-auto transition-all hover:scale-[1.1]" src="img/instagram.png"
+          alt="" /></a>
+    </li>
+    <li>
+      <a href="#"><img class="object-contain w-7 h-auto transition-all hover:scale-[1.1]" src="img/telegram.png"
+          alt="" /></a>
+    </li>
+    <li>
+      <a href="#"><img class="object-contain w-7 h-auto transition-all hover:scale-[1.1]" src="img/linkedin.png"
+          alt="" /></a>
+    </li>
+  </ul>
+  <section style="background-image: url(img/main-bg.jpg)"
+    class="bg-cover relative bg-center xl:py-[140px] pt-[100px] pb-[120pxy] xl:overflow-visible overflow-hidden">
+    <div class="container mx-auto relative">
+      <h1
+        class="font-extrabold lg:text-[60px] sm:text-[42px] text-3xl sm:leading-[1.1] mb-9 lg:pr-0 sm:pr-[200px] text-[#00175A] lg:max-w-[670px]">
+        Hayolingizdagi biznesni biz bilan Hayotga aylantiring
+      </h1>
+      <div class="flex sm:items-center sm:flex-row flex-col items-stretch  gap-[10px] mb-14">
+        <a href="expert.html"
+          class="text-white sm:text-lg text-sm leading-[22px] text-center py-4 px-[50px] rounded-md bg-green hover:text-white hover:bg-green-dark font-bold transition-all border-none">BIZNESGA
+          YORDAM</a>
+        <a href="keys.html"
+          class="text-green sm:text-lg text-sm leading-[18px] text-center py-4 px-[50px] rounded-md bg-white hover:text-green hover:bg-white font-bold transition-all border-2 border-green">`
+          KEYSLAR</a>
       </div>
-      <div class="drawer drawer-end z-50">
-        <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-side">
-          <label
-            for="my-drawer-4"
-            aria-label="close sidebar"
-            class="drawer-overlay"
-          ></label>
-          <ul class="menu bg-green text-base-content min-h-full w-80 p-4">
-            <!-- Sidebar content here -->
-            <li class="absolute top-1 right-1 cursor-pointer z-10">
-              <label for="my-drawer-4" aria-label="close sidebar" class="">
-                <svg
-                  class="sm:max-w-max max-w-[34px]"
-                  width="45"
-                  height="44"
-                  viewBox="0 0 45 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_78_2)">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M22.9351 24.5924L33.3062 34.9636C33.652 35.2976 34.1151 35.4824 34.5958 35.4782C35.0765 35.474 35.5363 35.2812 35.8762 34.9413C36.2161 34.6014 36.409 34.1415 36.4131 33.6608C36.4173 33.1802 36.2325 32.717 35.8986 32.3713L25.5274 22.0001L35.8986 11.6289C36.2325 11.2832 36.4173 10.8201 36.4131 10.3394C36.409 9.85868 36.2161 9.39886 35.8762 9.05894C35.5363 8.71903 35.0765 8.52622 34.5958 8.52204C34.1151 8.51786 33.652 8.70265 33.3062 9.03661L22.9351 19.4078L12.5639 9.03661C12.2166 8.71091 11.7562 8.53311 11.2801 8.54085C10.804 8.54858 10.3496 8.74123 10.013 9.07803C9.67644 9.41484 9.48411 9.86938 9.47672 10.3455C9.46932 10.8216 9.64745 11.2818 9.97339 11.6289L20.3427 22.0001L9.97156 32.3713C9.79646 32.5404 9.65679 32.7427 9.56071 32.9664C9.46462 33.19 9.41405 33.4306 9.41193 33.674C9.40982 33.9175 9.45621 34.1589 9.54839 34.3842C9.64057 34.6095 9.7767 34.8142 9.94884 34.9863C10.121 35.1585 10.3257 35.2946 10.551 35.3868C10.7763 35.479 11.0177 35.5254 11.2611 35.5232C11.5046 35.5211 11.7451 35.4705 11.9688 35.3745C12.1925 35.2784 12.3948 35.1387 12.5639 34.9636L22.9351 24.5924Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_78_2">
-                      <rect
-                        width="44"
-                        height="44"
-                        fill="white"
-                        transform="translate(0.935059)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </label>
-            </li>
-            <li>
-              <a class="text-white pb-2 pt-2 block" href="index.html"
-                >Biz haqimizda</a
-              >
-            </li>
-            <li>
-              <div class="flex flex-col items-start">
-                <div
-                  tabindex="0"
-                  role="button"
-                  class="text-white flex items-center gap-3"
-                >
-                  Biznes xizmatlar<img src="img/arrow-white.svg" alt="" />
-                </div>
-                <ul tabindex="0" class="menu before:hidden m-0 p-0">
-                  <li>
-                    <a class="text-white whitespace-nowrap"
-                      >Biznes xizmatlar 1</a
-                    >
-                  </li>
-                  <li>
-                    <a class="text-white whitespace-nowrap"
-                      >Biznes xizmatlar 2</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a class="text-white pb-2 pt-2 block" href="keys.html">Keyslar</a>
-            </li>
-            <li>
-              <a href="expert.html" class="text-white pb-2 pt-2 block" href="#">Ekspertlarimiz</a>
-            </li>
-            <li>
-              <a class="text-white pb-2 pt-2 block" href="gallery.html"
-                >Galereya</a
-              >
-            </li>
-            <li>
-              <a class="text-white pb-2 pt-2 block" href="partners.html"
-                >Hamkorlarga</a
-              >
-            </li>
-            <li>
-              <div class="flex flex-col items-start">
-                <div
-                  tabindex="0"
-                  role="button"
-                  class="text-white flex items-center gap-3"
-                >
-                  Press-Markaz<img src="img/arrow-white.svg" alt="" />
-                </div>
-                <ul tabindex="0" class="menu before:hidden m-0 p-0">
-                  <li>
-                    <a class="text-white whitespace-nowrap">Press-Markaz 1</a>
-                  </li>
-                  <li>
-                    <a class="text-white whitespace-nowrap">Press-Markaz 2</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a class="text-white pb-2 pt-2 block" href="contacts.html"
-                >Bog’lanish</a
-              >
-            </li>
-            <li class="mt-7 w-[calc(100% - 30px)]">
-              <a
-                href="#"
-                class="inline-flex font-medium items-center rounded-[6px] gap-[7px] justify-center bg-white hover:bg-white text-green pt-1 pb-1 pr-3 pl-3"
-              >
-                <img src="img/user-wh.svg" alt="" />Shaxsiy kabinet
-              </a>
-            </li>
-            <li class="mt-7 w-[calc(100% - 30px)]">
-              <a
-                href="tel:+998991094775"
-                class="inline-flex font-medium items-center rounded-[6px] gap-[7px] justify-center bg-white hover:bg-white text-green pt-1 pb-1 pr-3 pl-3"
-              >
-                <img src="img/phone-green.svg" alt="" />(99) 109-47-75
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="flex items-center rounded-[10px] bg-white xl:py-[52px] xl:px-12 p-5 text-green mb-[85px] border-l-[10px] border-green 
+        lg:max-w-[80%] sm:max-w-[60%] max-w-[90%]">
+        <p class="font-bold sm:text-[22px] text-lg sm:leading-7 max-w-[270px]">
+          Biznesingizning barcha turdagi muammolari Burhan Consult bilan yakun
+          topadi
+        </p>
+        <img src="img/alarm.png" class="object-contain max-w-[250px] h-auto ml-8 sm:block hidden" alt="" />
       </div>
-    </header>
-    <ul
-      class="absolute top-1/2 z-40 left-auto right-0 list-none gap-3 pt-5 pb-5 p-0 bg-white w-[56px] flex flex-col justify-center items-center rounded-l-[20px]"
-    >
-      <li>
-        <a href="#"
-          ><img
-            class="object-contain w-7 h-auto transition-all hover:scale-[1.1]"
-            src="img/facebook.png"
-            alt=""
-        /></a>
-      </li>
-      <li>
-        <a href="#"
-          ><img
-            class="object-contain w-7 h-auto transition-all hover:scale-[1.1]"
-            src="img/youtube.png"
-            alt=""
-        /></a>
-      </li>
-      <li>
-        <a href="#"
-          ><img
-            class="object-contain w-7 h-auto transition-all hover:scale-[1.1]"
-            src="img/instagram.png"
-            alt=""
-        /></a>
-      </li>
-      <li>
-        <a href="#"
-          ><img
-            class="object-contain w-7 h-auto transition-all hover:scale-[1.1]"
-            src="img/telegram.png"
-            alt=""
-        /></a>
-      </li>
-      <li>
-        <a href="#"
-          ><img
-            class="object-contain w-7 h-auto transition-all hover:scale-[1.1]"
-            src="img/linkedin.png"
-            alt=""
-        /></a>
-      </li>
-    </ul>
-    <section
-      style="background-image: url(img/main-bg.jpg)"
-      class="bg-cover relative bg-center xl:py-[140px] py-[100px] !pb-[20px] xl:overflow-visible overflow-hidden"
-    >
-      <div class="container mx-auto relative">
-        <h1
-          class="font-extrabold text-[60px] leading-[1.1] mb-9 text-[#00175A] max-w-[670px]"
-        >
-          Hayolingizdagi biznesni biz bilan Hayotga aylantiring
-        </h1>
-        <div class="flex items-center gap-[10px] mb-14">
-          <a
-            href="#"
-            class="text-white text-lg leading-[22px] py-4 px-[50px] rounded-md bg-green hover:text-white hover:bg-green-dark font-bold transition-all border-none"
-            >BIZNESGA YORDAM</a
-          >
-          <a
-            href="#"
-            class="text-green text-lg leading-[18px] py-4 px-[50px] rounded-md bg-white hover:text-green hover:bg-white font-bold transition-all border-2 border-green"
-            >BIZNESGA YORDAM</a
-          >
-        </div>
-        <div
-          class="flex items-center rounded-[10px] bg-white xl:py-[52px] xl:px-12 p-5 text-green mb-[85px] border-l-[10px] border-green max-w-[80%]"
-        >
-          <p class="font-bold text-[22px] leading-7 max-w-[270px]">
-            Biznesingizning barcha turdagi muammolari Burhan Consult bilan yakun
-            topadi
+      <img src="img/speaker.png"
+        class="absolute z-10 sm:block hidden right-[-120px] top-[100px] lg:max-w-full sm:max-w-[450px] lg:right-[-120px] lg:top-[-90px]"
+        alt="" />
+    </div>
+    <div
+      class="flex xl:w-full max-w-[90%] m-auto xl:max-w-[1300px] lg:items-center justify-between xl:-translate-x-1/2 xl:translate-y-1/2 xl:absolute relative xl:left-1/2 xl:bottom-0 z-20 bg-white rounded-10px xl:py-14 xl:px-12 p-4 rounded-[20px] xl:gap-[120px] gap-[40px]  lg:flex-row flex-col items-start">
+      <div class="flex text-center basis-1/2 sm:flex-row flex-col items-center gap-8">
+        <img src="img/karnay.png" class="object-contain sm:max-w-[160px] max-w-[70px] w-full" alt="" />
+        <div>
+          <h4 class="font-bold text-[22px] leading-8 mb-2 text-green sm:text-left">
+            Bizning maqsad
+          </h4>
+          <p class="text-base text-black">
+            Oʻzbekistondagi barcha biznes egalariga biz ega boʻlgan bilimlarni
+            yetkazish va Dunyo miqiyosida uzoq muddat faoliyat koʻrsatadigan
+            tashkilotlarga aylantirishda yordam berish
           </p>
-          <img
-            src="img/alarm.png"
-            class="object-contain max-w-[250px] h-auto ml-8"
-            alt=""
-          />
-        </div>
-        <img
-          src="img/speaker.png"
-          class="absolute z-10 max-w-full right-[-120px] top-[-90px]"
-          alt=""
-        />
-      </div>
-      <div
-        class="flex xl:w-full max-w-[90%] m-auto xl:max-w-[1300px] items-center justify-between xl:-translate-x-1/2 xl:translate-y-1/2 xl:absolute relative xl:left-1/2 xl:bottom-0 z-20 bg-white rounded-10px xl:py-14 xl:px-12 p-4 rounded-[20px] xl:gap-[120px] gap-[40px]"
-      >
-        <div class="flex basis-1/2 items-center gap-8">
-          <img
-            src="img/karnay.png"
-            class="object-contain max-w-[160px] w-full"
-            alt=""
-          />
-          <div>
-            <h4
-              class="font-bold text-[22px] leading-8 mb-2 text-green text-left"
-            >
-              Bizning maqsad
-            </h4>
-            <p class="text-base text-black">
-              Oʻzbekistondagi barcha biznes egalariga biz ega boʻlgan bilimlarni
-              yetkazish va Dunyo miqiyosida uzoq muddat faoliyat koʻrsatadigan
-              tashkilotlarga aylantirishda yordam berish
-            </p>
-          </div>
-        </div>
-        <div class="flex basis-1/2 items-center gap-8">
-          <img
-            src="img/metka.png"
-            class="object-contain max-w-[160px] w-full"
-            alt=""
-          />
-          <div>
-            <h4
-              class="font-bold text-[22px] leading-8 mb-2 text-green text-left"
-            >
-              Bizning Shior
-            </h4>
-            <p class="text-base text-black">
-              Oʻzbek biznesini bilim orqali Dunyoga olib chiqish
-            </p>
-          </div>
         </div>
       </div>
-    </section>
-    <section class="relative bg-cover w-full bg-center bg-no-repeat"
+      <div class="flex text-center basis-1/2 sm:flex-row flex-col items-center gap-8">
+        <img src="img/metka.png" class="object-contain sm:max-w-[160px] max-w-[70px] w-full" alt="" />
+        <div>
+          <h4 class="font-bold text-[22px] leading-8 mb-2 text-green sm:text-left">
+            Bizning Shior
+          </h4>
+          <p class="text-base text-black">
+            Oʻzbek biznesini bilim orqali Dunyoga olib chiqish
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="relative bg-white w-full bg-cover bg-bottom bg-no-repeat"
     style="background-image: url(img/modern.png)"">
       <img
-        src="img/abstract.jpg"
-        class="w-full object-cover origin-center xl:h-[565px] h-[300px]"
-        alt=""
-      />
-      <div
-      >
-        <div class="container mx-auto -translate-y-[250px]">
-          <h5
-            class="text-white text-center font-bold text-3xl leading-normal mb-[50px]"
-          >
-            Master klasslarimizdan lavhalar
-          </h5>
-          <a
-            href="https://www.youtube.com/watch?v=oQKnLxVH5dk&pp=ygUHZGFpc3l1aQ%3D%3D"
-            target="_blank"
-            class="shadow_card block sm:mb-[60px] mx-auto max-w-[1020px] mb-4 rounded-xl overflow-hidden relative"
-          >
-            <img
-              src="img/play.png"
-              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 sm:w-[185px] w-[80px] h-auto"
-              alt=""
-            />
-            <img
-              src="img/video1.jpg"
-              class="w-full object-cover object-center"
-              alt=""
-            />
-          </a>
-          <h2 class="text-blue font-bold text-[40px] text-center mb-8">
-            Biznes xizmatlar
-          </h2>
-          <div role="tablist" class="tabs ">
-            <input type="radio" name="my_tabs_2" role="tab"
-              class="tab whitespace-nowrap px-6 text-green border !border-green py-2 rounded-tl-[10px] !rounded-bl-[10px]  text-lg leading-[22px] h-auto checked:text-white checked:bg-green"
-              checked="checked" aria-label="Konsalting" />
-            <div role="tabpanel" class="tab-content mt-[60px]">
-            tab1
-            </div>
-            <input type="radio" name="my_tabs_2" role="tab"
-              class="tab whitespace-nowrap px-6 text-green border-t border-b !border-green py-2  text-lg leading-[22px] h-auto checked:text-white checked:bg-green"
-              aria-label="O’quv kurslari" />
-            <div role="tabpanel" class="tab-content">
-              Foto inner
-            </div>
-            <input type="radio" name="my_tabs_2" role="tab"
-              class="tab whitespace-nowrap px-6 text-green border !border-green py-2  rounded-tr-[10px] !rounded-br-[10px]  text-lg leading-[22px] h-auto checked:text-white checked:bg-green"
-              aria-label="Trening" />
-            <div role="tabpanel" class="tab-content">
-              Video inner
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="pt-[60px] bg-[#263044]">
-      <div class="container mx-auto">
-        <div class="flex items-end">
-          <div class="basis-1/2 xl:pb-10 pb-5 relative">
-            <img
-              src="img/quote.svg"
-              class="absolute -right-[100px] max-w-20 top-3"
-              alt=""
-            />
-            <h3 class="text-white text-3xl font-bold mb-1.5">
-              Bahodir Fozilxo’ja Burhonxo’jayevich
-            </h3>
-            <h4
-              class="text-[#E5B943] font-semibold text-xl mb-4 pb-4 border-b border-[#BDBDBD]"
-            >
-              Mutaxassis konsultant, 26 yillik tajribaga ega
-            </h4>
-            <p class="text-white text-base mb-2 text-left">Maʼlumot: oliy</p>
-            <p class="text-white text-base mb-6 text-left">
-              1992-1997 yillar davomida Fargʻona davlat politexnika institutida
-              taʼlim olganlar 2001 yil Kichik va oʻrta biznesni rivojlantirish
-              boʻyicha USAID programmasining moliyaviy hisob-kitob boʻyicha
-              malaka oshirganlar
-            </p>
-            <p class="text-white text-base mb-6 text-left">
-              Faoliyat: 26 yillik tajriba 1997 yildan boshlab turli xil xalqaro
-              va davlat tashkilotlarida, biznes faoliyatini tashkil qilish,
-              ishlab chiqarish, rivojlantirish, tartib va tizimga qoʻyish,
-              kengaytirish borasida amaliy va nazariy tajriba orttirib
-              kelmoqdalar
-            </p>
-            <p class="text-white text-base mb-6 text-left">
-              Konsalting faoliyati: 2007 yil Konsalting tashkilotiga asos
-              solganlar va qariyb 16yildan buyon Oʻzbekistondagi biznesmenlarga
-              biznesni tashkil qilishda, rivojlantirishda, muammolarini bartaraf
-              qilishda, tiximlashtirishda yordam berib kelmoqdalar
-            </p>
-          </div>
-          <div class="basis-1/2">
-            <img src="img/bio.png" class="max-w-full" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="xl:pt-[160px] pt-14 xl:pb-[280px] pb-[220px] bg-[#F5F8FF]">
-      <h2 class="text-blue font-bold text-[40px] text-center mb-10">
-        BIZNING EKSPERTLAR
+        src=" img/abstract.jpg" class="w-full object-cover origin-center xl:h-[565px] h-[300px]" alt="" />
+  <div>
+    <div class="container mx-auto -translate-y-[250px] -mb-[150px]">
+      <h5 class="text-white text-center font-bold text-3xl leading-normal mb-[50px]">
+        Master klasslarimizdan lavhalar
+      </h5>
+      <a href="https://www.youtube.com/watch?v=oQKnLxVH5dk&pp=ygUHZGFpc3l1aQ%3D%3D" target="_blank"
+        class="shadow_card block sm:mb-[60px] mx-auto max-w-[1020px] mb-4 rounded-xl overflow-hidden relative">
+        <img src="img/play.png"
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 sm:w-[185px] w-[80px] h-auto" alt="" />
+        <img src="img/video1.jpg" class="w-full object-cover object-center" alt="" />
+      </a>
+      <h2 class="text-blue font-bold sm:text-[40px] text-3xl sm:mb-8 mb-4">
+        Biznes xizmatlar
       </h2>
-      <!-- Slider main container -->
-      <div class="swiper w-full overflow-hidden">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper pb-[80px]">
-          <!-- Slides -->
-          <div class="swiper-slide w-[400px] basis-[400px] max-w-[400px]">
-            <div
-              class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card"
-            >
-              <a href="#" class="lg:h-[367px]">
-                <img
-                  src="img/exp1.jpg"
-                  class="object-cover object-center w-full h-full"
-                  alt="expert"
-                />
-              </a>
-              <div class="card-body pt-4 pb-7 px-3 text-center">
-                <a
-                  href="#"
-                  class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green"
-                  >Bahodir Fozilxo’ja</a
-                >
-                <p class="font-semibold text-lg text-green mb-3">
-                  Strategik boshqaruv, Tizimlashtirish, Menejment, HR
-                </p>
-                <span class="text-[#828282] text-lg">26 yillik tajriba</span>
-              </div>
+      <div role="tablist" class="tabs ">
+        <input type="radio" name="my_tabs_2" role="tab"
+          class="tab whitespace-nowrap sm:px-6 px-3 text-green border !border-green py-2 rounded-tl-[10px] !rounded-bl-[10px]  sm:text-lg text-sm leading-[22px] h-auto checked:text-white checked:bg-green"
+          checked="checked" aria-label="Konsalting" />
+        <div role="tabpanel" class="tab-content mt-[60px]">
+          <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-5 text-center">
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx1.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Korporativ trening</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
+            </div>
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx2.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Maxorat darslari</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
+            </div>
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx3.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Sales manager kursi</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
+            </div>
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx4.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Boshqaruv ilmi kursi</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
+            </div>
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx5.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Marketing asoslari</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
+            </div>
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx5.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Marketing asoslari</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
           </div>
-          <div class="swiper-slide w-[400px] basis-[400px] max-w-[400px]">
-            <div
-              class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card"
-            >
-              <a href="#" class="lg:h-[367px]">
-                <img
-                  src="img/exp1.jpg"
-                  class="object-cover object-center w-full h-full"
-                  alt="expert"
-                />
-              </a>
-              <div class="card-body pt-4 pb-7 px-3 text-center">
-                <a
-                  href="#"
-                  class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green"
-                  >Bahodir Fozilxo’ja</a
-                >
-                <p class="font-semibold text-lg text-green mb-3">
-                  Strategik boshqaruv, Tizimlashtirish, Menejment, HR
-                </p>
-                <span class="text-[#828282] text-lg">26 yillik tajriba</span>
-              </div>
+        </div>
+        <input type="radio" name="my_tabs_2" role="tab"
+          class="tab whitespace-nowrap sm:px-6 px-3 text-green border-t border-b !border-green py-2  sm:text-lg text-sm leading-[22px] h-auto checked:text-white checked:bg-green"
+          aria-label="O’quv kurslari" />
+        <div role="tabpanel" class="tab-content mt-[60px]">
+          <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-5 text-center">
+
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx3.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Sales manager kursi</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx4.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Boshqaruv ilmi kursi</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
+            </div>
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx1.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Korporativ trening</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
+            </div>
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx2.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Maxorat darslari</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
+            </div>
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx5.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Marketing asoslari</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
+            </div>
+
           </div>
-          <div class="swiper-slide w-[400px] basis-[400px] max-w-[400px]">
-            <div
-              class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card"
-            >
-              <a href="#" class="lg:h-[367px]">
-                <img
-                  src="img/exp1.jpg"
-                  class="object-cover object-center w-full h-full"
-                  alt="expert"
-                />
-              </a>
-              <div class="card-body pt-4 pb-7 px-3 text-center">
-                <a
-                  href="#"
-                  class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green"
-                  >Bahodir Fozilxo’ja</a
-                >
-                <p class="font-semibold text-lg text-green mb-3">
-                  Strategik boshqaruv, Tizimlashtirish, Menejment, HR
-                </p>
-                <span class="text-[#828282] text-lg">26 yillik tajriba</span>
-              </div>
+        </div>
+        <input type="radio" name="my_tabs_2" role="tab"
+          class="tab whitespace-nowrap sm:px-6 px-3 text-green border !border-green py-2  rounded-tr-[10px] !rounded-br-[10px]  sm:text-lg text-sm leading-[22px] h-auto checked:text-white checked:bg-green"
+          aria-label="Trening" />
+        <div role="tabpanel" class="tab-content mt-[60px]">
+          <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-5 text-center">
+
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx2.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Maxorat darslari</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx1.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Korporativ trening</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
+            </div>
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx3.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Sales manager kursi</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
+            </div>
+            <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
+              <img src="img/bx4.svg"
+                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
+                alt="">
+              <p
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                Boshqaruv ilmi kursi</p>
+              <a href="press-single.html"
+                class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
+            </div>
+
           </div>
-          <div class="swiper-slide w-[400px] basis-[400px] max-w-[400px]">
-            <div
-              class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card"
-            >
-              <a href="#" class="lg:h-[367px]">
-                <img
-                  src="img/exp1.jpg"
-                  class="object-cover object-center w-full h-full"
-                  alt="expert"
-                />
-              </a>
-              <div class="card-body pt-4 pb-7 px-3 text-center">
-                <a
-                  href="#"
-                  class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green"
-                  >Bahodir Fozilxo’ja</a
-                >
-                <p class="font-semibold text-lg text-green mb-3">
-                  Strategik boshqaruv, Tizimlashtirish, Menejment, HR
-                </p>
-                <span class="text-[#828282] text-lg">26 yillik tajriba</span>
-              </div>
-            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="sm:mb-[20px] mb-[50px]  relative z-10">
+    <div class="container mx-auto">
+      <div
+        class="bg-cover rounded-xl overflow-hidden lg:bg-center bg-left-top shadow_card lg:py-[58px] bg-no-repeat lg:min-h-[455px] sm:py-10 sm:px-[54px] lg:pr-[63%] sm:pr-[50%] py-4 px-4 !mt-[-150px]"
+        style="background-image: url(img/consultation.jpg)">
+        <h2
+          class="sm:text-4xl text-3xl mb-5 lg:leading-[58px] leading-9 font-bold bg-gradient-to-b from-[#FFF792] via-[#E2B13C] to-[#E8C44D] inline-block text-transparent bg-clip-text">
+          Konsultatsiyaga <br />
+          Yoziling
+        </h2>
+        <p class="text-white text-sm mb-12">
+          Ekspertlarimizdan biri bilan tanishuv konsultatsiyasini bepul qoʻlga
+          kiritish uchun xoziroq ariza qoldiring
+        </p>
+        <a href="contacts.html"
+          class="btn lg:py-4 py-2 text-green bg-white hover:bg-white px-14 font-bold sm:text-lg text-sm leading-5 h-auto transition-all hover:text-green-dark border-none">ARIZA
+          QOLDIRISH</a>
+      </div>
+    </div>
+  </section>
+  <section class="pt-[62px] xl:pb-[122px] pb-12">
+    <div class="container mx-auto">
+      <h2 class="text-blue font-bold sm:text-[40px] text-3xl sm:mb-8 mb-4">
+        Keyslar
+      </h2>
+      <div class="grid lg:grid-cols-3 sm:grid-cols-2 xl:gap-10 gap-[20px]">
+        <div class="card bg-white p-[22px] shadow_card">
+          <figure class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]">
+            <img src="img/lalaku.svg" class="object-contain w-full h-full max-h-[75px]" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 items-center text-center">
+            <p class="leading-6 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div class="swiper-slide w-[400px] basis-[400px] max-w-[400px]">
-            <div
-              class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card"
-            >
-              <a href="#" class="lg:h-[367px]">
-                <img
-                  src="img/exp1.jpg"
-                  class="object-cover object-center w-full h-full"
-                  alt="expert"
-                />
-              </a>
-              <div class="card-body pt-4 pb-7 px-3 text-center">
-                <a
-                  href="#"
-                  class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green"
-                  >Bahodir Fozilxo’ja</a
-                >
-                <p class="font-semibold text-lg text-green mb-3">
-                  Strategik boshqaruv, Tizimlashtirish, Menejment, HR
-                </p>
-                <span class="text-[#828282] text-lg">26 yillik tajriba</span>
-              </div>
-            </div>
+        </div>
+        <div class="card bg-white p-[22px] shadow_card">
+          <figure class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]">
+            <img src="img/lalaku.svg" class="object-contain w-full h-full max-h-[75px]" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 items-center text-center">
+            <p class="leading-6 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div class="swiper-slide w-[400px] basis-[400px] max-w-[400px]">
-            <div
-              class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card"
-            >
-              <a href="#" class="lg:h-[367px]">
-                <img
-                  src="img/exp1.jpg"
-                  class="object-cover object-center w-full h-full"
-                  alt="expert"
-                />
-              </a>
-              <div class="card-body pt-4 pb-7 px-3 text-center">
-                <a
-                  href="#"
-                  class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green"
-                  >Bahodir Fozilxo’ja</a
-                >
-                <p class="font-semibold text-lg text-green mb-3">
-                  Strategik boshqaruv, Tizimlashtirish, Menejment, HR
-                </p>
-                <span class="text-[#828282] text-lg">26 yillik tajriba</span>
-              </div>
-            </div>
+        </div>
+        <div class="card bg-white p-[22px] shadow_card">
+          <figure class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]">
+            <img src="img/lalaku.svg" class="object-contain w-full h-full max-h-[75px]" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 items-center text-center">
+            <p class="leading-6 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div class="swiper-slide w-[400px] basis-[400px] max-w-[400px]">
-            <div
-              class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card"
-            >
-              <a href="#" class="lg:h-[367px]">
-                <img
-                  src="img/exp1.jpg"
-                  class="object-cover object-center w-full h-full"
-                  alt="expert"
-                />
-              </a>
-              <div class="card-body pt-4 pb-7 px-3 text-center">
-                <a
-                  href="#"
-                  class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green"
-                  >Bahodir Fozilxo’ja</a
-                >
-                <p class="font-semibold text-lg text-green mb-3">
-                  Strategik boshqaruv, Tizimlashtirish, Menejment, HR
-                </p>
-                <span class="text-[#828282] text-lg">26 yillik tajriba</span>
-              </div>
-            </div>
+        </div>
+        <div class="card bg-white p-[22px] shadow_card">
+          <figure class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]">
+            <img src="img/lalaku.svg" class="object-contain w-full h-full max-h-[75px]" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 items-center text-center">
+            <p class="leading-6 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div class="swiper-slide w-[400px] basis-[400px] max-w-[400px]">
-            <div
-              class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card"
-            >
-              <a href="#" class="lg:h-[367px]">
-                <img
-                  src="img/exp1.jpg"
-                  class="object-cover object-center w-full h-full"
-                  alt="expert"
-                />
-              </a>
-              <div class="card-body pt-4 pb-7 px-3 text-center">
-                <a
-                  href="#"
-                  class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green"
-                  >Bahodir Fozilxo’ja</a
-                >
-                <p class="font-semibold text-lg text-green mb-3">
-                  Strategik boshqaruv, Tizimlashtirish, Menejment, HR
-                </p>
-                <span class="text-[#828282] text-lg">26 yillik tajriba</span>
-              </div>
-            </div>
+        </div>
+        <div class="card bg-white p-[22px] shadow_card">
+          <figure class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]">
+            <img src="img/lalaku.svg" class="object-contain w-full h-full max-h-[75px]" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 items-center text-center">
+            <p class="leading-6 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div class="swiper-slide w-[400px] basis-[400px] max-w-[400px]">
-            <div
-              class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card"
-            >
-              <a href="#" class="lg:h-[367px]">
-                <img
-                  src="img/exp1.jpg"
-                  class="object-cover object-center w-full h-full"
-                  alt="expert"
-                />
-              </a>
-              <div class="card-body pt-4 pb-7 px-3 text-center">
-                <a
-                  href="#"
-                  class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green"
-                  >Bahodir Fozilxo’ja</a
-                >
-                <p class="font-semibold text-lg text-green mb-3">
-                  Strategik boshqaruv, Tizimlashtirish, Menejment, HR
-                </p>
-                <span class="text-[#828282] text-lg">26 yillik tajriba</span>
-              </div>
-            </div>
+        </div>
+        <div class="card bg-white p-[22px] shadow_card">
+          <figure class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]">
+            <img src="img/lalaku.svg" class="object-contain w-full h-full max-h-[75px]" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 items-center text-center">
+            <p class="leading-6 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="card bg-white p-[22px] shadow_card">
+          <figure class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]">
+            <img src="img/lalaku.svg" class="object-contain w-full h-full max-h-[75px]" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 items-center text-center">
+            <p class="leading-6 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="card bg-white p-[22px] shadow_card">
+          <figure class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]">
+            <img src="img/lalaku.svg" class="object-contain w-full h-full max-h-[75px]" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 items-center text-center">
+            <p class="leading-6 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="card bg-white p-[22px] shadow_card">
+          <figure class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]">
+            <img src="img/lalaku.svg" class="object-contain w-full h-full max-h-[75px]" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 items-center text-center">
+            <p class="leading-6 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
         </div>
       </div>
       <div class="text-center">
-        <a
-          href="keys.html"
-          class="text-lg xl:mt-9 inline-block uppercase transition-all text-green hover:text-green-dark hover:border-green-dark font-bold border-2 border-green py-2 px-12 rounded-[6px]"
-          >barchasini ko’rish</a
-        > 
+        <a href="keys.html"
+          class="text-lg mt-9 inline-block uppercase transition-all text-green hover:text-green-dark hover:border-green-dark font-bold border-2 border-green py-2 px-12 rounded-[6px]">barchasini
+          ko’rish</a>
       </div>
-    </section>
-    <section class="sm:mb-[20px] mb-[50px]">
-      <div class="container mx-auto">
-        <div
-          class="bg-cover rounded-xl overflow-hidden lg:bg-center bg-left-top shadow_card lg:py-[58px] bg-no-repeat lg:min-h-[455px] sm:py-10 sm:px-[54px] lg:pr-[63%] sm:pr-[50%] py-4 px-4 !mt-[-150px]"
-          style="background-image: url(img/consultation.jpg)"
-        >
-          <h2
-            class="sm:text-4xl text-3xl mb-5 lg:leading-[58px] leading-9 font-bold bg-gradient-to-b from-[#FFF792] via-[#E2B13C] to-[#E8C44D] inline-block text-transparent bg-clip-text"
-          >
-            Konsultatsiyaga <br />
-            Yoziling
-          </h2>
-          <p class="text-white text-sm mb-12">
-            Ekspertlarimizdan biri bilan tanishuv konsultatsiyasini bepul qoʻlga
-            kiritish uchun xoziroq ariza qoldiring
+    </div>
+  </section>
+  <section class="pt-[60px] bg-[#263044]">
+    <div class="container mx-auto">
+      <div class="sm:flex sm:items-end">
+        <div class="basis-1/2 xl:pb-10 pb-5 relative">
+          <img src="img/quote.svg" class="sm:absolute -right-[100px] sm:max-w-20 max-w-[40px] mb-5 sm:mb-0 top-3" alt="" />
+          <h3 class="text-white text-3xl font-bold mb-1.5">
+            Bahodir Fozilxo’ja Burhonxo’jayevich
+          </h3>
+          <h4 class="text-[#E5B943] font-semibold text-xl mb-4 pb-4 border-b border-[#BDBDBD]">
+            Mutaxassis konsultant, 26 yillik tajribaga ega
+          </h4>
+          <p class="text-white text-base mb-2 text-left">Maʼlumot: oliy</p>
+          <p class="text-white text-base mb-6 text-left">
+            1992-1997 yillar davomida Fargʻona davlat politexnika institutida
+            taʼlim olganlar 2001 yil Kichik va oʻrta biznesni rivojlantirish
+            boʻyicha USAID programmasining moliyaviy hisob-kitob boʻyicha
+            malaka oshirganlar
           </p>
-          <a
-            href="#"
-            class="btn lg:py-4 py-2 text-green bg-white hover:bg-white px-14 font-bold sm:text-lg text-sm leading-5 h-auto transition-all hover:text-green-dark border-none"
-            >ARIZA QOLDIRISH</a
-          >
-        </div>
-      </div>
-    </section>
-    <section class="pt-[62px] xl:pb-[122px] pb-12">
-      <div class="container mx-auto">
-        <h2 class="text-blue font-bold text-[40px] text-center mb-8">
-          Keyslar
-        </h2>
-        <div class="flex flex-wrap justify-around gap-10">
-          <div
-            class="card bg-white w-[calc((100%-80px)/3)] p-[22px] shadow_card"
-          >
-            <figure
-              class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]"
-            >
-              <img
-                src="img/lalaku.svg"
-                class="object-contain w-full h-full max-h-[75px]"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body p-0 items-center text-center">
-              <p class="leading-6 font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div
-            class="card bg-white w-[calc((100%-80px)/3)] p-[22px] shadow_card"
-          >
-            <figure
-              class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]"
-            >
-              <img
-                src="img/lalaku.svg"
-                class="object-contain w-full h-full max-h-[75px]"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body p-0 items-center text-center">
-              <p class="leading-6 font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div
-            class="card bg-white w-[calc((100%-80px)/3)] p-[22px] shadow_card"
-          >
-            <figure
-              class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]"
-            >
-              <img
-                src="img/lalaku.svg"
-                class="object-contain w-full h-full max-h-[75px]"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body p-0 items-center text-center">
-              <p class="leading-6 font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div
-            class="card bg-white w-[calc((100%-80px)/3)] p-[22px] shadow_card"
-          >
-            <figure
-              class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]"
-            >
-              <img
-                src="img/lalaku.svg"
-                class="object-contain w-full h-full max-h-[75px]"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body p-0 items-center text-center">
-              <p class="leading-6 font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div
-            class="card bg-white w-[calc((100%-80px)/3)] p-[22px] shadow_card"
-          >
-            <figure
-              class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]"
-            >
-              <img
-                src="img/lalaku.svg"
-                class="object-contain w-full h-full max-h-[75px]"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body p-0 items-center text-center">
-              <p class="leading-6 font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div
-            class="card bg-white w-[calc((100%-80px)/3)] p-[22px] shadow_card"
-          >
-            <figure
-              class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]"
-            >
-              <img
-                src="img/lalaku.svg"
-                class="object-contain w-full h-full max-h-[75px]"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body p-0 items-center text-center">
-              <p class="leading-6 font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div
-            class="card bg-white w-[calc((100%-80px)/3)] p-[22px] shadow_card"
-          >
-            <figure
-              class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]"
-            >
-              <img
-                src="img/lalaku.svg"
-                class="object-contain w-full h-full max-h-[75px]"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body p-0 items-center text-center">
-              <p class="leading-6 font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div
-            class="card bg-white w-[calc((100%-80px)/3)] p-[22px] shadow_card"
-          >
-            <figure
-              class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]"
-            >
-              <img
-                src="img/lalaku.svg"
-                class="object-contain w-full h-full max-h-[75px]"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body p-0 items-center text-center">
-              <p class="leading-6 font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div
-            class="card bg-white w-[calc((100%-80px)/3)] p-[22px] shadow_card"
-          >
-            <figure
-              class="p-[22px] rounded-[10px] overflow-hidden mb-8 bg-[#FFED02]"
-            >
-              <img
-                src="img/lalaku.svg"
-                class="object-contain w-full h-full max-h-[75px]"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body p-0 items-center text-center">
-              <p class="leading-6 font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <a
-            href="keys.html"
-            class="text-lg mt-9 inline-block uppercase transition-all text-green hover:text-green-dark hover:border-green-dark font-bold border-2 border-green py-2 px-12 rounded-[6px]"
-            >barchasini ko’rish</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="sm:mb-[120px] mb-[50px] xl:pt-[150px] xl:pb-[120px] py-12 bg-cover w-full bg-right-bottom bg-no-repeat"
-      style="background-image: url(img/modern2.png)"
-    >
-      <div class="container mx-auto">
-        <div
-          class="bg-cover rounded-xl overflow-hidden lg:bg-center bg-left-top shadow_card lg:py-[58px] bg-no-repeat lg:min-h-[455px] sm:py-10 sm:px-[54px] lg:pr-[63%] sm:pr-[50%] py-4 px-4 "
-          style="background-image: url(img/consultation2.jpg)"
-        >
-          <h2
-            class="sm:text-4xl text-3xl mb-5 lg:leading-[58px] leading-9 font-bold bg-gradient-to-b from-[#FFF792] via-[#E2B13C] to-[#E8C44D] inline-block text-transparent bg-clip-text"
-          >
-            Konsultatsiyaga <br />
-            Yoziling
-          </h2>
-          <p class="text-white text-sm mb-12">
-            Ekspertlarimizdan biri bilan tanishuv konsultatsiyasini bepul qoʻlga
-            kiritish uchun xoziroq ariza qoldiring
+          <p class="text-white text-base mb-6 text-left">
+            Faoliyat: 26 yillik tajriba 1997 yildan boshlab turli xil xalqaro
+            va davlat tashkilotlarida, biznes faoliyatini tashkil qilish,
+            ishlab chiqarish, rivojlantirish, tartib va tizimga qoʻyish,
+            kengaytirish borasida amaliy va nazariy tajriba orttirib
+            kelmoqdalar
           </p>
-          <a
-            href="#"
-            class="btn lg:py-4 py-2 text-green bg-white hover:bg-white px-14 font-bold sm:text-lg text-sm leading-5 h-auto transition-all hover:text-green-dark border-none"
-            >ARIZA QOLDIRISH</a
-          >
+          <p class="text-white text-base mb-6 text-left">
+            Konsalting faoliyati: 2007 yil Konsalting tashkilotiga asos
+            solganlar va qariyb 16yildan buyon Oʻzbekistondagi biznesmenlarga
+            biznesni tashkil qilishda, rivojlantirishda, muammolarini bartaraf
+            qilishda, tiximlashtirishda yordam berib kelmoqdalar
+          </p>
         </div>
-
-        <h2 class="text-blue font-bold text-[40px] mt-[150px] text-center mb-10">
-          PRESS-MARKAZ
-        </h2>
-        <div class="flex justify-between gap-10">
-          <div class="card basis-1/3 shadow_card relative overflow-hidden">
-            <img
-              src="img/pr1.jpg"
-              class="object-cover h-[200px] sm:h-[260px]"
-              alt=""
-            />
-            <span
-              class="inline-block absolute right-3 top-2 bg-white text-sm font-semibold text-green rounded-[6px] text-center py-2 px-5"
-              >Yangilik</span
-            >
-            <div class="card-body bg-white sm:px-[18px] px-3 py-5">
-              <h4 class="mb-2 leading-none">
-                <a
-                  href="#"
-                  class="font-semibold sm:text-lg text-sm text-green hover:text-green-dark transition-all leading-none"
-                  >Standartlashtirish sohasidagi normativ hujjatlar</a
-                >
-              </h4>
-              <a
-                href="#"
-                class="inline-flex items-center gap-[6px] uppercase transition-all hover:text-green-dark hover:gap-[8px]"
-                >Batafsil o’qish <img src="img/right.svg" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="card basis-1/3 shadow_card relative overflow-hidden">
-            <img
-              src="img/pr1.jpg"
-              class="object-cover h-[200px] sm:h-[260px]"
-              alt=""
-            />
-            <span
-              class="inline-block absolute right-3 top-2 bg-white text-sm font-semibold text-green rounded-[6px] text-center py-2 px-5"
-              >Yangilik</span
-            >
-            <div class="card-body bg-white sm:px-[18px] px-3 py-5">
-              <h4 class="mb-2 leading-none">
-                <a
-                  href="#"
-                  class="font-semibold sm:text-lg text-sm text-green hover:text-green-dark transition-all leading-none"
-                  >Standartlashtirish sohasidagi normativ hujjatlar</a
-                >
-              </h4>
-              <a
-                href="#"
-                class="inline-flex items-center gap-[6px] uppercase transition-all hover:text-green-dark hover:gap-[8px]"
-                >Batafsil o’qish <img src="img/right.svg" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="card basis-1/3 shadow_card relative overflow-hidden">
-            <img
-              src="img/pr1.jpg"
-              class="object-cover h-[200px] sm:h-[260px]"
-              alt=""
-            />
-            <span
-              class="inline-block absolute right-3 top-2 bg-white text-sm font-semibold text-green rounded-[6px] text-center py-2 px-5"
-              >Yangilik</span
-            >
-            <div class="card-body bg-white sm:px-[18px] px-3 py-5">
-              <h4 class="mb-2 leading-none">
-                <a
-                  href="#"
-                  class="font-semibold sm:text-lg text-sm text-green hover:text-green-dark transition-all leading-none"
-                  >Standartlashtirish sohasidagi normativ hujjatlar</a
-                >
-              </h4>
-              <a
-                href="#"
-                class="inline-flex items-center gap-[6px] uppercase transition-all hover:text-green-dark hover:gap-[8px]"
-                >Batafsil o’qish <img src="img/right.svg" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <a
-            href="keys.html"
-            class="text-lg mt-9 inline-block uppercase transition-all text-green hover:text-green-dark hover:border-green-dark font-bold border-2 border-green py-2 px-12 rounded-[6px]"
-            >barchasini ko’rish</a
-          >
+        <div class="basis-1/2">
+          <img src="img/bio.png" class="max-w-full" alt="" />
         </div>
       </div>
-    </section>
-    <section class="request relative">
-      <marquee
-        class="uppercase absolute top-1/2 -translate-y-1/2 font-bold lg:text-[118px] sm:text-[58px] text-[34px] text-[#DDEBEC]"
-        behavior="alternate"
-        direction="right"
-        scrollamount="20"
-        >Savollar bormi?</marquee
-      >
-      <div class="container mx-auto sm:pb-[150px] pb-12 relative z-10">
-        <div class="flex justify-center">
-          <a href="#"
-            ><img class="sm:max-w-max max-w-14" src="img/next.png" alt=""
-          /></a>
-        </div>
-      </div>
-    </section>
-    <footer class="pb-[27px] bg-green-dark">
-      <div class="container mx-auto">
-        <div class="flex gap-10 sm:flex-row flex-col">
-          <div class="px-6 py-8 bg-green grow-[300px] rounded-b-[10px]">
-            <a href="index.html" class="inline-block"
-              ><img src="img/logo-white.svg" alt="" class="mb-8"
-            /></a>
-            <p class="text-white text-sm leading-4 mb-1">Telefon</p>
-            <a
-              href="tel:+998991094775"
-              class="text-white font-bold text-base inline-block leading-5 mb-2"
-              >+998 (99) 109-47-75</a
-            >
-            <br />
-            <a
-              href="tel:+998948906545"
-              class="text-white font-bold text-base inline-block leading-5 mb-9"
-              >+998 (94) 890-65-45</a
-            >
-
-            <p class="text-white text-sm leading-4 mb-1">Manzil</p>
-            <p class="text-white font-bold text-base leading-5 mb-2">
-              Toshkent shahar Mirzo Ulugʻbek tumani Doʻrmon yoʻli 9
-            </p>
-
-            <ul class="list-none gap-4 flex justify-center items-center mb-6">
-              <li>
-                <a href="#"
-                  ><img
-                    class="rounded-full overflow-hidden p-2 bg-white w-[46px] h-[46] transition-all hover:-translate-y-1"
-                    src="img/tg.jpg"
-                    alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    class="rounded-full overflow-hidden p-2 bg-white w-[46px] h-[46] transition-all hover:-translate-y-1"
-                    src="img/ins.jpg"
-                    alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    class="rounded-full overflow-hidden p-2 bg-white w-[46px] h-[46] transition-all hover:-translate-y-1"
-                    src="img/face.jpg"
-                    alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    class="rounded-full overflow-hidden p-2 bg-white w-[46px] h-[46] transition-all hover:-translate-y-1"
-                    src="img/you.jpg"
-                    alt=""
-                /></a>
-              </li>
-            </ul>
-            <a
-              href="#"
-              class="flex font-semibold items-center text-center justify-center rounded-[6px] gap-[7px] bg-white text-green pt-1 pb-1 pr-3 pl-3"
-            >
-              <img src="img/user-wh.svg" alt="" />Shaxsiy kabinet
+    </div>
+  </section>
+  <section class="xl:pt-[160px] pt-14 xl:pb-[280px] lg:pb-[220px] pb-10 bg-[#F5F8FF]">
+    <h2 class="text-blue font-bold sm:text-[40px] text-3xl text-center sm:mb-10 mb-4">
+      BIZNING EKSPERTLAR
+    </h2>
+    <!-- Slider main container -->
+    <div class="swiper w-full overflow-hidden">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper pb-[80px]">
+        <!-- Slides -->
+        <div class="swiper-slide sm:w-[400px] sm:basis-[400px] sm:max-w-[400px] w-[300px] basis-[300px] max-w-[300px]">
+          <div class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card">
+            <a href="expert-single.html" class="lg:h-[367px]">
+              <img src="img/exp1.jpg" class="object-cover object-center w-full h-full" alt="expert" />
             </a>
-          </div>
-          <div class="w-full gap-10 py-10">
-            <div class="grid lg:grid-cols-4 grid-cols-2 lg:gap-0 gap-8">
-              <div>
-                <h4 class="text-white font-bold text-base mb-4">Sahifalar</h4>
-                <ul class="flex flex-col gap-2">
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Asosiy sahifa</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Biz haqimizda</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Keyslar</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Bizning ekspertlar</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Galereya</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Hamkorlarimizga</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Bog’lanish</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 class="text-white font-bold text-base mb-4">Konsalting</h4>
-                <ul class="flex flex-col gap-2">
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Diagnostika</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Audit</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Tizimlashtirish</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Marketing</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Savdo</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >HR</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Moliya</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Ta'minot tizimi</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Avtomizatsiya</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Xavfsizlik tizimi</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 class="text-white font-bold text-base mb-4">
-                  O'quv kurslari
-                </h4>
-                <ul class="flex flex-col gap-2">
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Sotuv</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >HR</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >TOP menedjer <br />
-                      (Rahbarlar uchun)</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 class="text-white font-bold text-base mb-4">
-                  Press-Markaz
-                </h4>
-                <ul class="flex flex-col gap-2">
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Yangiliklar</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Maqolalar</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Foydali ma’lumotlar</a
-                    >
-                  </li>
-                  <li class="leading-none">
-                    <a
-                      href="#"
-                      class="text-white leading-none text-sm hover:underline hover:decoration-solid"
-                      >Tavsiyalar</a
-                    >
-                  </li>
-                </ul>
-              </div>
+            <div class="card-body pt-4 pb-7 px-3 text-center">
+              <a href="expert-single.html"
+                class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green">Bahodir
+                Fozilxo’ja</a>
+              <p class="font-semibold text-lg text-green mb-3">
+                Strategik boshqaruv, Tizimlashtirish, Menejment, HR
+              </p>
+              <span class="text-[#828282] text-lg">26 yillik tajriba</span>
             </div>
-            <hr class="bg-[#D3D3D3] border-0 h-[1px] mt-6 mb-9" />
-            <div
-              class="flex xl:justify-between gap-x-10 gap-y-3 items-center flex-wrap xl:flex-nowrap"
-            >
-              <p class="text-white text-sm whitespace-nowrap leading-4">
-                ООО «MASTER EXPERT PARTNERS»
+          </div>
+        </div>
+        <div class="swiper-slide sm:w-[400px] sm:basis-[400px] sm:max-w-[400px] w-[300px] basis-[300px] max-w-[300px]">
+          <div class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card">
+            <a href="expert-single.html" class="lg:h-[367px]">
+              <img src="img/exp1.jpg" class="object-cover object-center w-full h-full" alt="expert" />
+            </a>
+            <div class="card-body pt-4 pb-7 px-3 text-center">
+              <a href="expert-single.html"
+                class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green">Bahodir
+                Fozilxo’ja</a>
+              <p class="font-semibold text-lg text-green mb-3">
+                Strategik boshqaruv, Tizimlashtirish, Menejment, HR
               </p>
-              <p class="text-white text-sm whitespace-nowrap leading-4">
-                ИНН 305306279
+              <span class="text-[#828282] text-lg">26 yillik tajriba</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide sm:w-[400px] sm:basis-[400px] sm:max-w-[400px] w-[300px] basis-[300px] max-w-[300px]">
+          <div class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card">
+            <a href="expert-single.html" class="lg:h-[367px]">
+              <img src="img/exp1.jpg" class="object-cover object-center w-full h-full" alt="expert" />
+            </a>
+            <div class="card-body pt-4 pb-7 px-3 text-center">
+              <a href="expert-single.html"
+                class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green">Bahodir
+                Fozilxo’ja</a>
+              <p class="font-semibold text-lg text-green mb-3">
+                Strategik boshqaruv, Tizimlashtirish, Menejment, HR
               </p>
-              <p class="text-white text-sm whitespace-nowrap leading-4">
-                Р/C 2020 8000 6008 4363 2001
+              <span class="text-[#828282] text-lg">26 yillik tajriba</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide sm:w-[400px] sm:basis-[400px] sm:max-w-[400px] w-[300px] basis-[300px] max-w-[300px]">
+          <div class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card">
+            <a href="expert-single.html" class="lg:h-[367px]">
+              <img src="img/exp1.jpg" class="object-cover object-center w-full h-full" alt="expert" />
+            </a>
+            <div class="card-body pt-4 pb-7 px-3 text-center">
+              <a href="expert-single.html"
+                class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green">Bahodir
+                Fozilxo’ja</a>
+              <p class="font-semibold text-lg text-green mb-3">
+                Strategik boshqaruv, Tizimlashtirish, Menejment, HR
               </p>
-              <p class="text-white text-sm whitespace-nowrap leading-4">
-                МФО 00423
+              <span class="text-[#828282] text-lg">26 yillik tajriba</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide sm:w-[400px] sm:basis-[400px] sm:max-w-[400px] w-[300px] basis-[300px] max-w-[300px]">
+          <div class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card">
+            <a href="expert-single.html" class="lg:h-[367px]">
+              <img src="img/exp1.jpg" class="object-cover object-center w-full h-full" alt="expert" />
+            </a>
+            <div class="card-body pt-4 pb-7 px-3 text-center">
+              <a href="expert-single.html"
+                class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green">Bahodir
+                Fozilxo’ja</a>
+              <p class="font-semibold text-lg text-green mb-3">
+                Strategik boshqaruv, Tizimlashtirish, Menejment, HR
               </p>
-              <p class="text-white text-sm whitespace-nowrap leading-4">
-                ОКЭД 74900
+              <span class="text-[#828282] text-lg">26 yillik tajriba</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide sm:w-[400px] sm:basis-[400px] sm:max-w-[400px] w-[300px] basis-[300px] max-w-[300px]">
+          <div class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card">
+            <a href="expert-single.html" class="lg:h-[367px]">
+              <img src="img/exp1.jpg" class="object-cover object-center w-full h-full" alt="expert" />
+            </a>
+            <div class="card-body pt-4 pb-7 px-3 text-center">
+              <a href="expert-single.html"
+                class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green">Bahodir
+                Fozilxo’ja</a>
+              <p class="font-semibold text-lg text-green mb-3">
+                Strategik boshqaruv, Tizimlashtirish, Menejment, HR
               </p>
+              <span class="text-[#828282] text-lg">26 yillik tajriba</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide sm:w-[400px] sm:basis-[400px] sm:max-w-[400px] w-[300px] basis-[300px] max-w-[300px]">
+          <div class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card">
+            <a href="expert-single.html" class="lg:h-[367px]">
+              <img src="img/exp1.jpg" class="object-cover object-center w-full h-full" alt="expert" />
+            </a>
+            <div class="card-body pt-4 pb-7 px-3 text-center">
+              <a href="expert-single.html"
+                class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green">Bahodir
+                Fozilxo’ja</a>
+              <p class="font-semibold text-lg text-green mb-3">
+                Strategik boshqaruv, Tizimlashtirish, Menejment, HR
+              </p>
+              <span class="text-[#828282] text-lg">26 yillik tajriba</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide sm:w-[400px] sm:basis-[400px] sm:max-w-[400px] w-[300px] basis-[300px] max-w-[300px]">
+          <div class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card">
+            <a href="expert-single.html" class="lg:h-[367px]">
+              <img src="img/exp1.jpg" class="object-cover object-center w-full h-full" alt="expert" />
+            </a>
+            <div class="card-body pt-4 pb-7 px-3 text-center">
+              <a href="expert-single.html"
+                class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green">Bahodir
+                Fozilxo’ja</a>
+              <p class="font-semibold text-lg text-green mb-3">
+                Strategik boshqaruv, Tizimlashtirish, Menejment, HR
+              </p>
+              <span class="text-[#828282] text-lg">26 yillik tajriba</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide sm:w-[400px] sm:basis-[400px] sm:max-w-[400px] w-[300px] basis-[300px] max-w-[300px]">
+          <div class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card">
+            <a href="expert-single.html" class="lg:h-[367px]">
+              <img src="img/exp1.jpg" class="object-cover object-center w-full h-full" alt="expert" />
+            </a>
+            <div class="card-body pt-4 pb-7 px-3 text-center">
+              <a href="expert-single.html"
+                class="text-[22px] leading-8 mb-3 text-black font-bold transition-all hover:text-green">Bahodir
+                Fozilxo’ja</a>
+              <p class="font-semibold text-lg text-green mb-3">
+                Strategik boshqaruv, Tizimlashtirish, Menejment, HR
+              </p>
+              <span class="text-[#828282] text-lg">26 yillik tajriba</span>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
-  <script>
-    const swiper = new Swiper(".swiper", {
-      direction: "horizontal",
-      slidesPerView: "auto",
-      loop: true,
-      speed: 400,
-      spaceBetween: 40,
-      pagination: {
-        el: ".swiper-pagination",
-      },
+    </div>
+    <div class="text-center">
+      <a href="expert.html"
+        class="text-lg xl:mt-9 inline-block uppercase transition-all text-green hover:text-green-dark hover:border-green-dark font-bold border-2 border-green py-2 px-12 rounded-[6px]">barchasini
+        ko’rish</a>
+    </div>
+  </section>
+  <section
+    class="mb-[0px] xl:pt-[150px] xl:pb-[120px] lg:mt-[-300px] sm:mt-0 py-12 relative z-10 bg-cover w-full bg-right-bottom bg-no-repeat"
+    style="background-image: url(img/modern2.png)">
+    <div class="container mx-auto">
+      <div
+        class="bg-cover rounded-xl overflow-hidden lg:bg-center bg-left-top shadow_card lg:py-[58px] bg-no-repeat lg:min-h-[455px] sm:py-10 sm:px-[54px] lg:pr-[63%] sm:pr-[50%] py-4 px-4 "
+        style="background-image: url(img/consultation2.jpg)">
+        <h2
+          class="sm:text-4xl text-3xl mb-5 lg:leading-[58px] leading-9 font-bold bg-gradient-to-b from-[#FFF792] via-[#E2B13C] to-[#E8C44D] inline-block text-transparent bg-clip-text">
+          Konsultatsiyaga <br />
+          Yoziling
+        </h2>
+        <p class="text-white text-sm mb-12">
+          Ekspertlarimizdan biri bilan tanishuv konsultatsiyasini bepul qoʻlga
+          kiritish uchun xoziroq ariza qoldiring
+        </p>
+        <a href="contacts.html"
+          class="btn lg:py-4 py-2 text-green bg-white hover:bg-white px-14 font-bold sm:text-lg text-sm leading-5 h-auto transition-all hover:text-green-dark border-none">ARIZA
+          QOLDIRISH</a>
+      </div>
 
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+      <h2 class="text-blue font-bold sm:text-[40px] text-3xl lg:mt-[150px] mt-10 text-center mb-10">
+        PRESS-MARKAZ
+      </h2>
+      <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
+        <div class="card shadow_card relative overflow-hidden">
+          <img src="img/pr1.jpg" class="object-cover h-[200px] sm:h-[260px]" alt="" />
+          <span
+            class="inline-block absolute right-3 top-2 bg-white text-sm font-semibold text-green rounded-[6px] text-center py-2 px-5">Yangilik</span>
+          <div class="card-body bg-white sm:px-[18px] px-3 py-5">
+            <h4 class="mb-2 leading-none">
+              <a href="press-single.html"
+                class="font-semibold sm:text-lg text-sm text-green hover:text-green-dark transition-all leading-none">Standartlashtirish
+                sohasidagi normativ hujjatlar</a>
+            </h4>
+            <a href="press-single.html"
+              class="inline-flex items-center gap-[6px] uppercase transition-all hover:text-green-dark hover:gap-[8px]">Batafsil
+              o’qish <img src="img/right.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="card shadow_card relative overflow-hidden">
+          <img src="img/pr1.jpg" class="object-cover h-[200px] sm:h-[260px]" alt="" />
+          <span
+            class="inline-block absolute right-3 top-2 bg-white text-sm font-semibold text-green rounded-[6px] text-center py-2 px-5">Yangilik</span>
+          <div class="card-body bg-white sm:px-[18px] px-3 py-5">
+            <h4 class="mb-2 leading-none">
+              <a href="press-single.html"
+                class="font-semibold sm:text-lg text-sm text-green hover:text-green-dark transition-all leading-none">Standartlashtirish
+                sohasidagi normativ hujjatlar</a>
+            </h4>
+            <a href="press-single.html"
+              class="inline-flex items-center gap-[6px] uppercase transition-all hover:text-green-dark hover:gap-[8px]">Batafsil
+              o’qish <img src="img/right.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="card shadow_card relative overflow-hidden">
+          <img src="img/pr1.jpg" class="object-cover h-[200px] sm:h-[260px]" alt="" />
+          <span
+            class="inline-block absolute right-3 top-2 bg-white text-sm font-semibold text-green rounded-[6px] text-center py-2 px-5">Yangilik</span>
+          <div class="card-body bg-white sm:px-[18px] px-3 py-5">
+            <h4 class="mb-2 leading-none">
+              <a href="press-single.html"
+                class="font-semibold sm:text-lg text-sm text-green hover:text-green-dark transition-all leading-none">Standartlashtirish
+                sohasidagi normativ hujjatlar</a>
+            </h4>
+            <a href="press-single.html"
+              class="inline-flex items-center gap-[6px] uppercase transition-all hover:text-green-dark hover:gap-[8px]">Batafsil
+              o’qish <img src="img/right.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="card lg:hidden shadow_card relative overflow-hidden">
+          <img src="img/pr1.jpg" class="object-cover h-[200px] sm:h-[260px]" alt="" />
+          <span
+            class="inline-block absolute right-3 top-2 bg-white text-sm font-semibold text-green rounded-[6px] text-center py-2 px-5">Yangilik</span>
+          <div class="card-body bg-white sm:px-[18px] px-3 py-5">
+            <h4 class="mb-2 leading-none">
+              <a href="press-single.html"
+                class="font-semibold sm:text-lg text-sm text-green hover:text-green-dark transition-all leading-none">Standartlashtirish
+                sohasidagi normativ hujjatlar</a>
+            </h4>
+            <a href="press-single.html"
+              class="inline-flex items-center gap-[6px] uppercase transition-all hover:text-green-dark hover:gap-[8px]">Batafsil
+              o’qish <img src="img/right.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="press.html"
+          class="text-lg mt-9 inline-block uppercase transition-all text-green hover:text-green-dark hover:border-green-dark font-bold border-2 border-green py-2 px-12 rounded-[6px]">barchasini
+          ko’rish</a>
+      </div>
+    </div>
+  </section>
+  <section class="request relative">
+    <marquee
+      class="uppercase absolute top-1/2 -translate-y-1/2 font-bold lg:text-[118px] sm:text-[58px] text-[34px] text-[#DDEBEC]"
+      behavior="alternate" direction="right" scrollamount="20">Savollar bormi?</marquee>
+    <div class="container mx-auto sm:pb-[150px] pb-12 relative z-10">
+      <div class="flex justify-center">
+        <a href="#"><img class="sm:max-w-max max-w-14" src="img/next.png" alt="" /></a>
+      </div>
+    </div>
+  </section>
+  <footer class="pb-[27px] bg-green-dark">
+    <div class="container mx-auto">
+      <div class="flex gap-10 sm:flex-row flex-col">
+        <div class="px-6 py-8 bg-green grow-[300px] rounded-b-[10px]">
+          <a href="index.html" class="inline-block"><img src="img/logo-white.svg" alt="" class="mb-8" /></a>
+          <p class="text-white text-sm leading-4 mb-1">Telefon</p>
+          <a href="tel:+998991094775" class="text-white font-bold text-base inline-block leading-5 mb-2">+998 (99)
+            109-47-75</a>
+          <br />
+          <a href="tel:+998948906545" class="text-white font-bold text-base inline-block leading-5 mb-9">+998 (94)
+            890-65-45</a>
 
-      // And if we need scrollbar
-      scrollbar: {
-        el: ".swiper-scrollbar",
-      },
-      autoplay: {
-        delay: 5000,
-      },
-    });
-  </script>
+          <p class="text-white text-sm leading-4 mb-1">Manzil</p>
+          <p class="text-white font-bold text-base leading-5 mb-2">
+            Toshkent shahar Mirzo Ulugʻbek tumani Doʻrmon yoʻli 9
+          </p>
+
+          <ul class="list-none gap-4 flex justify-center items-center mb-6">
+            <li>
+              <a href="#"><img
+                  class="rounded-full overflow-hidden p-2 bg-white w-[46px] h-[46] transition-all hover:-translate-y-1"
+                  src="img/tg.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img
+                  class="rounded-full overflow-hidden p-2 bg-white w-[46px] h-[46] transition-all hover:-translate-y-1"
+                  src="img/ins.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img
+                  class="rounded-full overflow-hidden p-2 bg-white w-[46px] h-[46] transition-all hover:-translate-y-1"
+                  src="img/face.jpg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img
+                  class="rounded-full overflow-hidden p-2 bg-white w-[46px] h-[46] transition-all hover:-translate-y-1"
+                  src="img/you.jpg" alt="" /></a>
+            </li>
+          </ul>
+          <a href="#"
+            class="flex font-semibold items-center text-center justify-center rounded-[6px] gap-[7px] bg-white text-green pt-1 pb-1 pr-3 pl-3">
+            <img src="img/user-wh.svg" alt="" />Shaxsiy kabinet
+          </a>
+        </div>
+        <div class="w-full gap-10 py-10">
+          <div class="grid lg:grid-cols-4 grid-cols-2 lg:gap-0 gap-8">
+            <div>
+              <h4 class="text-white font-bold text-base mb-4">Sahifalar</h4>
+              <ul class="flex flex-col gap-2">
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">Asosiy
+                    sahifa</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">Biz
+                    haqimizda</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">Keyslar</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">Bizning
+                    ekspertlar</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#"
+                    class="text-white leading-none text-sm hover:underline hover:decoration-solid">Galereya</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#"
+                    class="text-white leading-none text-sm hover:underline hover:decoration-solid">Hamkorlarimizga</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#"
+                    class="text-white leading-none text-sm hover:underline hover:decoration-solid">Bog’lanish</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-bold text-base mb-4">Konsalting</h4>
+              <ul class="flex flex-col gap-2">
+                <li class="leading-none">
+                  <a href="#"
+                    class="text-white leading-none text-sm hover:underline hover:decoration-solid">Diagnostika</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">Audit</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#"
+                    class="text-white leading-none text-sm hover:underline hover:decoration-solid">Tizimlashtirish</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#"
+                    class="text-white leading-none text-sm hover:underline hover:decoration-solid">Marketing</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">Savdo</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">HR</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">Moliya</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">Ta'minot
+                    tizimi</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#"
+                    class="text-white leading-none text-sm hover:underline hover:decoration-solid">Avtomizatsiya</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">Xavfsizlik
+                    tizimi</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-bold text-base mb-4">
+                O'quv kurslari
+              </h4>
+              <ul class="flex flex-col gap-2">
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">Sotuv</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">HR</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">TOP
+                    menedjer <br />
+                    (Rahbarlar uchun)</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-bold text-base mb-4">
+                Press-Markaz
+              </h4>
+              <ul class="flex flex-col gap-2">
+                <li class="leading-none">
+                  <a href="#"
+                    class="text-white leading-none text-sm hover:underline hover:decoration-solid">Yangiliklar</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#"
+                    class="text-white leading-none text-sm hover:underline hover:decoration-solid">Maqolalar</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#" class="text-white leading-none text-sm hover:underline hover:decoration-solid">Foydali
+                    ma’lumotlar</a>
+                </li>
+                <li class="leading-none">
+                  <a href="#"
+                    class="text-white leading-none text-sm hover:underline hover:decoration-solid">Tavsiyalar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="bg-[#D3D3D3] border-0 h-[1px] mt-6 mb-9" />
+          <div class="flex xl:justify-between gap-x-10 gap-y-3 items-center flex-wrap xl:flex-nowrap">
+            <p class="text-white text-sm whitespace-nowrap leading-4">
+              ООО «MASTER EXPERT PARTNERS»
+            </p>
+            <p class="text-white text-sm whitespace-nowrap leading-4">
+              ИНН 305306279
+            </p>
+            <p class="text-white text-sm whitespace-nowrap leading-4">
+              Р/C 2020 8000 6008 4363 2001
+            </p>
+            <p class="text-white text-sm whitespace-nowrap leading-4">
+              МФО 00423
+            </p>
+            <p class="text-white text-sm whitespace-nowrap leading-4">
+              ОКЭД 74900
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  const swiper = new Swiper(".swiper", {
+    direction: "horizontal",
+    slidesPerView: "auto",
+    loop: true,
+    speed: 400,
+    spaceBetween: 40,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
+</script>
+
 </html>
