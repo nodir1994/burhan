@@ -186,7 +186,7 @@
     </div>
   </header>
   <ul
-    class="absolute lg:top-1/2 sm:top-[650px] z-40 left-auto right-0 list-none gap-3 pt-5 pb-5 p-0 bg-white w-[56px] flex flex-col justify-center items-center rounded-l-[20px] top-2/3">
+    class="fixed top-1/2 sm:top-1/4 xl:top-1/3 z-40 left-auto right-0 list-none gap-3 pt-5 pb-5 p-0 bg-white w-[56px] flex flex-col justify-center items-center rounded-l-[20px]">
     <li>
       <a href="#"><img class="object-contain w-7 h-auto transition-all hover:scale-[1.1]" src="img/facebook.png"
           alt="" /></a>
@@ -217,10 +217,10 @@
       </h1>
       <div class="flex sm:items-center sm:flex-row flex-col items-stretch  gap-[10px] mb-14">
         <a href="expert.html"
-          class="text-white sm:text-lg text-lg leading-[22px] text-center py-4 px-[50px] rounded-md bg-green hover:text-white hover:bg-green-dark font-bold transition-all border-none">BIZNESGA
+          class="text-white sm:text-lg text-lg leading-[22px] text-center py-3.5 px-[50px] rounded-md bg-green hover:text-white hover:bg-green-dark font-bold transition-all border-none">BIZNESGA
           YORDAM</a>
         <a href="keys.html"
-          class="text-green sm:text-lg text-lg leading-[18px] text-center py-4 px-[50px] rounded-md bg-white hover:text-green hover:bg-white font-bold transition-all border-2 border-green">
+          class="text-green sm:text-lg text-lg leading-[22px] text-center py-3 px-[50px] rounded-md bg-white hover:text-green hover:bg-white font-bold transition-all border-2 border-green">
           KEYSLAR</a>
       </div>
       <div class="flex items-center rounded-[10px] bg-white xl:py-[52px] xl:px-12 p-5 text-green mb-[85px] border-l-[10px] border-green 
@@ -274,75 +274,76 @@
       </h5>
       <a href="https://www.youtube.com/watch?v=oQKnLxVH5dk&pp=ygUHZGFpc3l1aQ%3D%3D" target="_blank"
         class="shadow_card block sm:mb-[60px] mx-auto max-w-[1020px] mb-4 rounded-xl overflow-hidden relative">
-        <img src="img/play.png"
-          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 sm:w-[185px] w-[80px] h-auto" alt="" />
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 sm:p-12 p-5 -translate-y-1/2 play-triangle bg-[#ffffffb3] sm:size-[136px] size-[60px]  animation-pulse">
+          <img src="img/play2.svg" class=" h-auto w-full object-cover object-center" alt="" />
+        </div>
         <img src="img/video1.jpg" class="w-full object-cover object-center" alt="" />
       </a>
-      <h2 class="text-blue font-bold sm:text-[40px] text-3xl sm:mb-8 mb-4">
+      <h2 class="text-blue font-bold sm:text-[40px] text-3xl sm:mb-8 mb-4 uppercase text-center">
         Biznes xizmatlar
       </h2>
-      <div role="tablist" class="tabs ">
+      <div role="tablist" class="tabs  sm:relative">
         <input type="radio" name="my_tabs_2" role="tab"
-          class="tab whitespace-nowrap sm:px-6 px-3 text-green border !border-green py-2 rounded-tl-[10px] !rounded-bl-[10px]  sm:text-lg text-sm leading-[22px] h-auto checked:text-white checked:bg-green"
-          checked="checked" aria-label="Konsalting" />
-        <div role="tabpanel" class="tab-content mt-[60px]">
+          class="tab whitespace-nowrap px-6 text-green lg:!min-w-[200px] sm:min-w-[150px] min-w-[calc(33vw-10px)] lg:-translate-x-1/2 sm:translate-x-[125px] sm:absolute lg:left-1/3 sm:left-0 top-0 border !border-green py-2 rounded-tl-[10px] !rounded-bl-[10px] text-sm sm:text-lg leading-[22px] h-auto checked:text-white checked:bg-green"
+          checked="checked" aria-label="Konsalting" /> 
+        <div role="tabpanel" class="tab-content mt-[60px] sm:mt-[90px]">
           <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-5 text-center">
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx1.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx1.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Korporativ trening</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx2.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx2.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Maxorat darslari</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx3.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx3.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Sales manager kursi</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx4.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx4.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Boshqaruv ilmi kursi</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx5.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx5.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Marketing asoslari</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx5.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx5.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Marketing asoslari</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
@@ -350,57 +351,57 @@
           </div>
         </div>
         <input type="radio" name="my_tabs_2" role="tab"
-          class="tab whitespace-nowrap sm:px-6 px-3 text-green border-t border-b !border-green py-2  sm:text-lg text-sm leading-[22px] h-auto checked:text-white checked:bg-green"
+          class="tab whitespace-nowrap px-6 text-green lg:!min-w-[200px] sm:min-w-[150px] min-w-[calc(33vw-10px)] lg:-translate-x-1/2 sm:translate-x-[125px] sm:absolute lg:left-1/3 sm:left-0 top-0 lg:ml-[200px] sm:ml-[150px] border-t border-b !border-green py-2 text-sm sm:text-lg leading-[22px] h-auto checked:text-white checked:bg-green"
           aria-label="O’quv kurslari" />
-        <div role="tabpanel" class="tab-content mt-[60px]">
+        <div role="tabpanel" class="tab-content mt-[60px] sm:mt-[90px]">
           <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-5 text-center">
 
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx3.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx3.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Sales manager kursi</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx4.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx4.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Boshqaruv ilmi kursi</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx1.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx1.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Korporativ trening</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx2.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx2.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Maxorat darslari</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx5.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx5.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Marketing asoslari</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
@@ -409,47 +410,47 @@
           </div>
         </div>
         <input type="radio" name="my_tabs_2" role="tab"
-          class="tab whitespace-nowrap sm:px-6 px-3 text-green border !border-green py-2  rounded-tr-[10px] !rounded-br-[10px]  sm:text-lg text-sm leading-[22px] h-auto checked:text-white checked:bg-green"
+          class="tab whitespace-nowrap px-6 text-green lg:!min-w-[200px] sm:min-w-[150px] min-w-[calc(33vw-10px)] lg:-translate-x-1/2 sm:translate-x-[125px] sm:absolute lg:left-1/3 sm:left-0 top-0 lg:ml-[400px] sm:ml-[300px] border !border-green py-2 rounded-tr-[10px] !rounded-br-[10px] text-sm sm:text-lg leading-[22px] h-auto checked:text-white checked:bg-green"
           aria-label="Trening" />
-        <div role="tabpanel" class="tab-content mt-[60px]">
+        <div role="tabpanel" class="tab-content mt-[60px] sm:mt-[90px]">
           <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-5 text-center">
 
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx2.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx2.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Maxorat darslari</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx1.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx1.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Korporativ trening</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx3.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx3.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Sales manager kursi</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
             </div>
             <div class="bg-white shadow_card text-center p-[25px]  rounded-[10px]">
-              <img src="img/bx4.svg"
-                class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full object-cover object-center overflow-hidden"
-                alt="">
+              <div class="size-[120px] mx-auto mb-3 p-[25px] border-[10px] border-[#E6F1EC] bg-green rounded-full overflow-hidden"><img src="img/bx4.svg"
+                class="object-contain object-center"
+                alt=""></div>
               <p
-                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-1 after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
+                class="font-semibold capitalize sm:text-[25px] text-lg sm:leading-[27px] leading-4 sm:mb-9 mb-3 relative after:h-[2px] after:mt-4 after:bg-[#BDBDBD] after:w-[100px] after:block after:mx-auto">
                 Boshqaruv ilmi kursi</p>
               <a href="press-single.html"
                 class="inline-block text-sm text-white bg-green transition-all hover:bg-green-dark px-7 py-2 rounded-md">Batafsil</a>
@@ -483,7 +484,7 @@
   </section>
   <section class="sm:pt-[62px] xl:pb-[122px] pb-12 pt-6">
     <div class="container mx-auto">
-      <h2 class="text-blue font-bold sm:text-[40px] text-3xl sm:mb-8 mb-4">
+      <h2 class="text-blue font-bold sm:text-[40px] text-3xl sm:mb-8 mb-4 uppercase text-center">
         Keyslar
       </h2>
       <div class="grid lg:grid-cols-3 sm:grid-cols-2 xl:gap-10 gap-[20px]">
@@ -614,14 +615,14 @@
       </div>
     </div>
   </section>
-  <section class="xl:pt-[160px] pt-14 xl:pb-[280px] lg:pb-[220px] pb-10 bg-[#F5F8FF]">
+  <section class="xl:pt-[160px] pt-14 xl:pb-[280px] lg:pb-[20px] pb-10 bg-[#F5F8FF]">
     <h2 class="text-blue font-bold sm:text-[40px] text-3xl text-center sm:mb-10 mb-4">
       BIZNING EKSPERTLAR
     </h2>
     <!-- Slider main container -->
     <div class="swiper w-full overflow-hidden">
       <!-- Additional required wrapper -->
-      <div class="swiper-wrapper sm:pb-[80px] pb-10">
+      <div class="swiper-wrapper pb-10">
         <!-- Slides -->
         <div class="swiper-slide sm:w-[400px] sm:basis-[400px] sm:max-w-[400px] w-[300px] basis-[300px] max-w-[300px]">
           <div class="card overflow-hidden rounded-[10px] bg-white w-full shadow_card">
@@ -771,12 +772,12 @@
     </div>
     <div class="text-center">
       <a href="expert.html"
-        class="text-lg xl:mt-9 inline-block uppercase transition-all text-green hover:text-green-dark hover:border-green-dark font-bold border-2 border-green py-2 px-12 rounded-[6px]">barchasini
+        class="text-lg inline-block uppercase transition-all text-green hover:text-green-dark hover:border-green-dark font-bold border-2 border-green py-2 px-12 rounded-[6px]">barchasini
         ko’rish</a>
     </div>
   </section>
   <section
-    class="mb-[0px] xl:pt-[150px] xl:pb-[120px] lg:mt-[-300px] sm:mt-0 sm:pt-12 pt-3 pb-12 relative z-10 bg-cover w-full bg-right-bottom bg-no-repeat"
+    class="mb-[0px] xl:pt-[150px] xl:pb-[120px] xl:mt-[-300px] lg:mt-0 lg:pt-[80px] sm:pt-12 pt-3 pb-12 relative z-10 bg-cover w-full bg-right-bottom bg-no-repeat"
     style="background-image: url(img/modern2.png)">
     <div class="container mx-auto">
       <div
